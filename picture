@@ -5,6 +5,6 @@
 </head>
 <body>
     <h1>Here is a photo:</h1>
-    <img src="Screenshot_20241111_234114_WhatsApp.jpg" alt="My Photo" width="300">
+    <img src="Screenshot_20241111_234114_WhatsApp.jpg" alt="Photo" width="300">
 </body>
 </html>
