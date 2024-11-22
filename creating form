@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        input, select, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .checkbox-group, .radio-group {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        .checkbox-group label, .radio-group label {
+            font-weight: normal;
+        }
+
+        .file-upload {
+            background-color: #f4f4f4;
+            border: dashed 2px #ccc;
+            text-align: center;
+            padding: 20px;
+            cursor: pointer;
+        }
+
+        .file-upload:hover {
+            border-color: #4CAF50;
+        }
+
+        .form-message {
+            text-align: center;
+            font-size: 0.9rem;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Advanced Form Example</h2>
+        <form action="/submit" method="post">
+            <!-- Name Field -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <!-- Email Field -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Password Field -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" minlength="8" required>
+
+            <!-- Gender Radio Buttons -->
+            <label>Gender:</label>
+            <div class="radio-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </div>
+
+            <!-- Age Dropdown -->
+            <label for="age">Age Range:</label>
+            <select id="age" name="age" required>
+                <option value="" disabled selected>Select your age range</option>
+                <option value="18-25">18-25</option>
+                <option value="26-35">26-35</option>
+                <option value="36-45">36-45</option>
+                <option value="46+">46+</option>
+            </select>
+
+            <!-- Checkbox Group -->
+            <label>Hobbies:</label>
+            <div class="checkbox-group">
+                <input type="checkbox" id="reading" name="hobbies" value="reading">
+                <label for="reading">Reading</label>
+
+                <input type="checkbox" id="traveling" name="hobbies" value="traveling">
+                <label for="traveling">Traveling</label>
+
+                <input type="checkbox" id="gaming" name="hobbies" value="gaming">
+                <label for="gaming">Gaming</label>
+            </div>
+
+            <!-- File Upload -->
+            <label for="file">Upload Profile Picture:</label>
+            <div class="file-upload">
+                <input type="file" id="file" name="profile_picture" accept="image/*">
+            </div>
+
+            <!-- Message Textarea -->
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+        </form>
+        <div class="form-message">
+            <p>* All fields are required. Your data will remain confidential.</p>
+        </div>
+    </div>
+</body>
+</html>
