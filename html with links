@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link of HTML</title>
+</head>
+<body>
+    <h1>Check these out!</h1>
+    <a href="https://www.google.com">Visit Google</a><br>
+    <a href="https://www.youtube.com">Visit YouTube</a>
+</body>
+</html>
