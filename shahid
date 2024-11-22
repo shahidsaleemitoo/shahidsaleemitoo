@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Photo</title>
+</head>
+<body>
+    <h1>Here is my photo:</h1>
+    <img src="Snapchat-189834783.jpg" alt="My Photo" width="300">
+</body>
+</html>
